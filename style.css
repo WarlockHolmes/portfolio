@@ -1,0 +1,9 @@
+
+nav {
+  height: 250px;
+}
+
+nav .nav-link:first-of-type {
+  margin: -5px 0 -20px;
+  transform: scaleX(3);
+}
