@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Bootstrap 4 -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <!-- Custom CSS -->
@@ -12,30 +13,32 @@
 </head>
 <body class="container-fluid">
   <!-- Nav -->
-  <nav class="nav margin col-2 flex-column px-0 mx-0 position-fixed justify-content-around align-content-around text-center">
+  <nav class="nav margin col-2 flex-column px-0 position-fixed justify-content-around align-content-around text-center">
     <a class="nav-link py-0" href="#top">^</a>
     <a class="nav-link" href="#bio">About Me</a>
     <a class="nav-link" href="#portfolio">Portfolio</a>
-    <a class="nav-link" href="#links">Social media</a>
+    <a class="nav-link" href="#links">Social Media</a>
   </nav>
   <!-- Intro -->
   <div class="row my-0" id="top">
     <div class="margin col-2" id="top-margin">
     </div>
     <div class="col-10 px-0 content position-relative">
-      <div id="translucent">
-        <p class="pl-5"> <span class="font-weight-bold">Morgan Grau</span> is a freelance actor,
-          writer, educator, and software developer.
-
-          Based in Edmonton, Alberta (Canada),
+      <div id="intro">
+        <div class="col-12 col-md-6 pl-5" id="intro-text">
+          <p class="text-wrap"><span class="font-weight-bold">Morgan Grau</span> is a freelance actor, writer, educator, and web developer.</p>
+          <p class="text-wrap">Based in Edmonton, Alberta (Canada),
           he is a passionate student
-          of history and game design.
-
-          His work aims to bring together
+          of history and game design.</p>
+          <p class="text-wrap">His work aims to bring together
           <span class="font-weight-bold">old knowledge</span> and <span class="font-weight-bold">new media</span>.
-        </p>
+          </p>
+        </div>
       </div>
+      <hr class="d-md-none">
       <img src="./images/mg.jpg">
+      <div class="d-md-none w-100" id="fade">
+      </div>
     </div>
   </div>
 
@@ -50,7 +53,7 @@
         <br>
         <p>General work history... blah blah blah blah blah blah... blah blah blah blah blah blah...blah blah blah blah blah blah...blah blah blah blah blah blah...blah blah blah blah blah blah...blah blah blah blah blah blah...blah blah blah blah blah blah...</p>
         <hr>
-        <p>If you're interested in a detailed summary of his artistic work, <a href="./documents/ArtisticCV.docx">click here</a>.</p>
+        <p>If you're interested in a detailed summary of his artistic work, <a href="#">click here</a>.</p>
         <br>
         <p>For examples of his web development, please keep scrolling.</p>
       </div>
@@ -61,10 +64,10 @@
     <div class="margin col-2" id="portfolio-margin">
     </div>
     <div class="col-10 content">
-
+      
     </div>
   </div>
-  <!-- Footer (Links) -->
+  <!-- Footer (Social Media) -->
   <footer class="row" id="links">
     <div class="margin col-2" id="links-margin">
     </div>
