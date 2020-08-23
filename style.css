@@ -1,4 +1,4 @@
-/* Page Margin */
+/* General Structure */
 
 .margin {
   left: 0;
@@ -8,24 +8,32 @@
   height: 100%;
 }
 
+#top-margin {
+  background-image: linear-gradient(to bottom,rgb(102,0,0), rgb(128,0,0));
+}
+
 #bio-margin {
-  background-color: #990000;
+  background-image: linear-gradient(to bottom,rgb(128,0,0), rgb(153,0,0));
 }
 
 #portfolio-margin {
-  background-color: #cc0000;
+  background-image: linear-gradient(to bottom,rgb(153,0,0), rgba(204,0,0));
 }
 
 #links-margin {
-  background-color: #550000;
+  background-image: linear-gradient(to bottom,rgb(204,0,0), rgb(255,0,0));
+}
+
+.section {
+  border-bottom: 3px grey solid;
 }
 
 /* Nav */
 
 nav {
   height: 250px;
-  background-image: linear-gradient(to bottom,rgba(128,0,0,1), rgba(128,0,0,0));
-  z-index: 2;
+  background-image: linear-gradient(to bottom,rgba(77,0,0,1), rgba(77,0,0,0));
+  z-index: 5;
 }
 
 .nav-link {
@@ -41,10 +49,11 @@ nav {
   transform: scaleX(4);
 }
 
-/* Bio */
+/* Intro */
 
-#bio {
-  border-bottom: 3px grey solid;
+#top span:first-of-type {
+  font-size: 1.5em;
+  color: #4d0000;
 }
 
 #translucent {
@@ -54,10 +63,27 @@ nav {
   width: 100%;
 }
 
-#bio img {
+#top img {
   max-width: 75%;
   float: right;
   margin-right: -120px;
+}
+
+#top p {
+  font-size: 18px;
+  white-space: pre-line;
+  transform: translateY(50%);
+}
+
+@media (max-width: 767px) {
+
+  #top img {
+    border-radius: 5px;
+    position: absolute;
+    max-height: 50%;
+    margin-right: auto;
+    float: none;
+  }
 }
 
 
