@@ -1,9 +1,67 @@
+/* Page Margin */
+
+.margin {
+  left: 0;
+}
+
+.margin:not(:first-of-type) {
+  height: 100%;
+}
+
+#bio-margin {
+  background-color: #990000;
+}
+
+#portfolio-margin {
+  background-color: #cc0000;
+}
+
+#links-margin {
+  background-color: #550000;
+}
+
+/* Nav */
 
 nav {
   height: 250px;
+  background-image: linear-gradient(to bottom,rgba(128,0,0,1), rgba(128,0,0,0));
+  z-index: 2;
 }
 
-nav .nav-link:first-of-type {
-  margin: -5px 0 -20px;
-  transform: scaleX(3);
+.nav-link {
+  color: grey;
 }
+
+.nav-link:hover {
+  color: white;
+}
+
+.nav-link:first-of-type {
+  margin-bottom: -15px;
+  transform: scaleX(4);
+}
+
+/* Bio */
+
+#bio {
+  border-bottom: 3px grey solid;
+}
+
+#translucent {
+  background-image: linear-gradient(to right,rgba(255,255,255,1) 35%, rgba(255,255,255,0) 65%);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+#bio img {
+  max-width: 75%;
+  float: right;
+  margin-right: -120px;
+}
+
+
+/* Portfolio */
+
+
+/* Footer (links) */
