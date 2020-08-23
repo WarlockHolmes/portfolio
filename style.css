@@ -24,7 +24,7 @@
   background-image: linear-gradient(to bottom,rgb(204,0,0), rgb(255,0,0));
 }
 
-.section {
+.content {
   border-bottom: 3px grey solid;
 }
 
@@ -57,7 +57,7 @@ nav {
 }
 
 #translucent {
-  background-image: linear-gradient(to right,rgba(255,255,255,1) 35%, rgba(255,255,255,0) 65%);
+  background-image: linear-gradient(to right,rgba(255,255,255,1) 40%, rgba(255,255,255,0) 65%);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -72,7 +72,7 @@ nav {
 #top p {
   font-size: 18px;
   white-space: pre-line;
-  transform: translateY(50%);
+  transform: translateY(80%);
 }
 
 @media (max-width: 767px) {
@@ -86,6 +86,11 @@ nav {
   }
 }
 
+/* Bio */
+
+#bio-content {
+  padding: 120px 15px;
+}
 
 /* Portfolio */
 
