@@ -1,11 +1,10 @@
 /* General Structure */
 
-
 .margin {
   left: 0;
 }
 
-.margin:not(:first-of-type) {
+.margin:not(nav .margin) {
   height: 100%;
 }
 
@@ -27,6 +26,17 @@
 
 .content {
   border-bottom: 3px grey solid;
+}
+
+.fadeline {
+  height: 125px;
+  background-image: linear-gradient(to top,rgba(255,255,255,1) 40%, rgba(255,255,255,0));
+  z-index: 3;
+  bottom: 0;
+}
+
+.fadeline:last-of-type {
+  height: 100px;
 }
 
 /* Nav */
@@ -77,16 +87,44 @@ nav {
 
 /* Bio */
 
-#bio-content {
-  padding: 120px 15px;
+#bio .content {
+  padding: 60px 15px;
 }
 
 /* Portfolio */
 
+#portfolio .content {
+  padding: 60px 15px;
+}
+
+#portfolio .content .row{
+  overflow-x: scroll;
+}
+
+#portfolio img {
+  max-width: 100%;
+}
+
+#portfolio p {
+  font-size: 12px;
+  color: grey;
+}
 
 /* Social Media */
 
+#links .content {
+  padding: 40px 15px;
+}
+
 /* Mobile */
+
+@media (max-width: 576px) {
+
+  nav a {
+    font-size: 12px;
+  }
+
+}
 
 @media (max-width: 767px) {
 
@@ -109,23 +147,8 @@ nav {
   #top hr {
     margin: 35px 0;
   }
-
-  #fade {
-    height: 150px;
-    background-image: linear-gradient(to top,rgba(255,255,255,1) 60%, rgba(255,255,255,0) 90%);
-    z-index: 3;
-    position: absolute;
-    bottom: 0;
-  }
 }
 
-@media (max-width: 576px) {
-
-  nav a {
-    font-size: 12px;
-  }
-
-}
 
 @media (min-width:1200px) {
 
