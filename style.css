@@ -112,8 +112,22 @@ nav {
 
 /* Social Media */
 
+footer {
+  height: 250px;
+}
+
 #links .content {
   padding: 40px 15px;
+  border-bottom: none;
+}
+
+#links .flex-item {
+  margin-bottom: 100px;
+}
+
+i {
+  font-size: 48px;
+  color: grey;
 }
 
 /* Mobile */
