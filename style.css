@@ -30,7 +30,7 @@
 
 .fadeline {
   height: 125px;
-  background-image: linear-gradient(to top,rgba(255,255,255,1), rgba(255,255,255,0));
+  background-image: linear-gradient(to top,rgba(255,255,255,1)30%, rgba(255,255,255,0));
   z-index: 3;
   bottom: 0;
 }
@@ -147,7 +147,7 @@ i {
 @media (max-width: 576px) {
 
   nav a {
-    font-size: 12px;
+    font-size: 14px;
   }
 
 }
@@ -173,6 +173,22 @@ i {
   #top hr {
     margin: 35px 0;
   }
+
+  #bio-button {
+    background-color: rgb(153,0,0);
+    border-radius: 10px;
+    color: white!important;
+  }
+
+  #links .flex-item {
+    margin-bottom: 40px;
+  }
+
+  i {
+    font-size: 32px;
+    color: grey;
+  }
+
 }
 
 
